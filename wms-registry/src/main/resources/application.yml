@@ -1,0 +1,9 @@
+server:
+  port: 8761
+
+
+eureka:
+  client:
+    register-with-eureka: false  #是否需要注册到注册中心，因为该项目本身作为服务注册中心，所以为false
+    fetch-registry: false #是否需要从注册中心获取服务列表，原因同上，为false
+    service-url.defaultZone:  http://localhost:${server.port}/eureka/

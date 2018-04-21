@@ -13,3 +13,10 @@ eureka:
 service:
   provider:
     name: SERVICE-PROVIDER
+
+zuul:
+  routes:
+    apis:
+      path: /api/**
+      service-id: ${service.provider.name}
+

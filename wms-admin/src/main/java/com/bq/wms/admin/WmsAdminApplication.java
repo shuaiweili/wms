@@ -10,8 +10,8 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  * @author: 李帅伟
  * @date: 2018/4/21
  **/
-@EnableZuulProxy
-@EnableFeignClients
+//@EnableZuulProxy
+//@EnableFeignClients
 @SpringBootApplication
 public class WmsAdminApplication {
 
